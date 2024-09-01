@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans&display=swap" rel="stylesheet">
+    <title>MovieCat</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span
+                        class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="defaultNavbar1">
+                <br>
+                <div class="col-md-1"></div>
+                <span class="nav navbar-nav"><a href="homepage.html"><img src="img/logo.png" alt="Placeholder image"
+                            width="80" height="80" class="img-responsive"></a></span>
+                <div class="col-md-1 text-left"></div>
+                <form class="navbar-form navbar-left" id="test" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="search_word" placeholder="Search" size="80">
+                        <select id="dropdown-menu">
+                        <option value="Title" selected>電影名稱</option>
+						<option value="Actor">演員</option>
+						<option value="Genre">電影類型</option>
+						
+                        </select>
+
+                    </div>
+                    <button type="submit" class="btn btn-default" id="btn" )>Submit</button>
+                    <br>
+                    <div class="form-group" id="key">
+                        <label id="key1" style="margin-left: 5px;"></label>
+                        <label id="key2" style="margin-left: 10px;"></label>
+                        <label id="key3" style="margin-left: 10px;"></label>
+                        <label id="key4" style="margin-left: 10px;"></label>
+                        <label id="key5" style="margin-left: 10px;"></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="row">
+                <div class="text-justify col-sm-8">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#genre_All">All</a></li>
+                        <li><a data-toggle="tab" href="#genre_Action">Action</a></li>
+                        <li><a data-toggle="tab" href="#genre_Animation">Animation</a></li>
+                        <li><a data-toggle="tab" href="#genre_Comedy">Comedy</a></li>
+                        <li><a data-toggle="tab" href="#genre_Romance">Romance</a></li>
+                        <li><a data-toggle="tab" href="#genre_SF">Science-Fiction</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="genre_All" class="tab-pane fade in active">
+                            <div class="row">
+                                <br>
+                                <div class="col-lg-4">
+                                    <br>
+                                    <span class="label label-warning" id="votescore01"></span>
+                                    <br>
+                                    <img src="img/ImgResponsive_Placeholder.png" class="cover" id="cover01" style="margin: auto" width="210" height="315">
+                                    <hr>
+                                    <strong><p class="MovieTitle" id="title01" style="text-align: center"></p></strong>
+                                </div>
+                                <div class="col-lg-4">
+                                    <br>
+                                    <span class="label label-warning" id="votescore02"></span>
+                                    <br>
+                                    <img src="img/ImgResponsive_Placeholder.png" class="cover" id="cover02" style="margin: auto" width="210" height="315">
+                                    <hr>
+                                    <strong><p class="MovieTitle" id="title02" style="text-align: center"></p></strong>
+                                </div>
+                                <div class="col-lg-4">
+                                    <br>
+                                    <span class="label label-warning" id="votescore03"></span>
+                                    <br>
+                                    <img src="img/ImgResponsive_Placeholder.png" class="cover" id="cover03" style="margin: auto" width="210" height="315">
+                                    <hr>
+                                    <strong><p class="MovieTitle" id="title03" style="text-align: center"></p></strong>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <a herf="#">
+                                    <h5 align="right" class="search_all">>>更多結果</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="genre_Action" class="tab-pane fade">
+                            <div class="row">
+                                <br>
+                                <div class="col-lg-4">
+                                    <br>
+                                    <span class="label label-warning" id="votescore11"></span>
+                                    <br>
+                                    <img src="img/ImgResponsive_Placeholder.png" class="cover" id="cover11" style="margin: auto" width="210" height="315">
+                                    <hr>
+                                    <strong><p class="MovieTitle" id="title11" style="text-align: center"></p></strong>
+                                </div>
+                                <div class="col-lg-4">
+                                    <br>
+                                    <span class="label label-warning" id="votescore12"></span>
+                                    <br>
+                                    <img src="img/ImgResponsive_Placeholder.png" class="cover" id="cover12" style="margin: auto" width="210" height="315">
+                                    <hr>
+                                    <strong><p class="MovieTitle" id="title12" style="text-align: center"></p></strong>
+                                </div>
+                                <div class="col-lg-4">
+                                    <br>
+                                    <span class="label label-warning" id="votescore13"></span>
+                                    <br>
+                                    <img src="img/ImgResponsive_Placeholder.png" class="cover" id="cover13" style="margin: auto" width="210" height="315">
+                                    <hr>
+                                    <strong><p class="MovieTitle" id="title13" style="text-align: center"></p></strong>
+                                </div>
+                                <div class="row">
+                                    <a herf="#">
+                                        <h5 align="right" class="search_action">>>更多結果</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="genre_Animation" class="tab-pane fade">
+                            <div class="row">
+                                <br>
+                                <div class="col-lg-4">
+                                    <br>
+                                    <span class="label label-warning" id="votescore21"></span>
+                                    <br>
+                                    <img src="img/ImgResponsive_Placeholder.png" class="cover" id="cover21" style="margin: auto" width="210" height="315">
+                                    <hr>
+                                    <strong><p class="MovieTitle" id="title21" style="text-align: center"></p></strong>
+                                </div>
+                                <div class="col-lg-4">
+                                    <br>
+                                    <span class="label label-warning" id="votescore22"></span>
+                                    <br>
+                                    <img src="img/ImgResponsive_Placeholder.png" class="cover" id="cover22" style="margin: auto" width="210" height="315">
+                                    <hr>
+                                    <strong><p class="MovieTitle" id="title22" style="text-align: center"></p></strong>
+                                </div>
+                                <div class="col-lg-4">
+                                    <br>
+                                    <span class="label label-warning" id="votescore23"></span>
+                                    <br>
+                                    <img src="img/ImgResponsive_Placeholder.png" class="cover" id="cover23" style="margin: auto" width="210" height="315">
+                                    <hr>
+                                    <strong><p class="MovieTitle" id="title23" style="text-align: center"></p></strong>
+                                </div>
+                                <div class="row">
+                                    <a herf="#">
+                                        <h5 align="right" class="search_animation">>>更多結果</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="genre_Comedy" class="tab-pane fade">
+                            <div class="row">
+                                <br>
+                                <div class="col-lg-4">
+                                    <br>
+                                    <span class="label label-warning" id="votescore31"></span>
+                                    <br>
+                                    <img src="img/ImgResponsive_Placeholder.png" class="cover" id="cover31" style="margin: auto" width="210" height="315">
+                                    <hr>
+                                    <strong><p class="MovieTitle" id="title31" style="text-align: center"></p></strong>
+                                </div>
+                                <div class="col-lg-4">
+                                    <br>
+                                    <span class="label label-warning" id="votescore32"></span>
+                                    <br>
+                                    <img src="img/ImgResponsive_Placeholder.png" class="cover" id="cover32" style="margin: auto" width="210" height="315">
+                                    <hr>
+                                    <strong><p class="MovieTitle" id="title32" style="text-align: center"></p></strong>
+                                </div>
+                                <div class="col-lg-4">
+                                    <br>
+                                    <span class="label label-warning" id="votescore33"></span>
+                                    <br>
+                                    <img src="img/ImgResponsive_Placeholder.png" class="cover" id="cover33" style="margin: auto" width="210" height="315">
+                                    <hr>
+                                    <strong><p class="MovieTitle" id="title33" style="text-align: center"></p></strong>
+                                </div>
+                                <div class="row">
+                                    <a herf="#">
+                                        <h5 align="right" class="search_comedy">>>更多結果</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="genre_Romance" class="tab-pane fade">
+                            <div class="row">
+                                <br>
+                                <div class="col-lg-4">
+                                    <br>
+                                    <span class="label label-warning" id="votescore41"></span>
+                                    <br>
+                                    <img src="img/ImgResponsive_Placeholder.png" class="cover" id="cover41" style="margin: auto" width="210" height="315">
+                                    <hr>
+                                    <strong><p class="MovieTitle" id="title41" style="text-align: center"></p></strong>
+                                </div>
+                                <div class="col-lg-4">
+                                    <br>
+                                    <span class="label label-warning" id="votescore42"></span>
+                                    <br>
+                                    <img src="img/ImgResponsive_Placeholder.png" class="cover" id="cover42" style="margin: auto" width="210" height="315">
+                                    <hr>
+                                    <strong><p class="MovieTitle" id="title42" style="text-align: center"></p></strong>
+                                </div>
+                                <div class="col-lg-4">
+                                    <br>
+                                    <span class="label label-warning" id="votescore43"></span>
+                                    <br>
+                                    <img src="img/ImgResponsive_Placeholder.png" class="cover" id="cover43" style="margin: auto" width="210" height="315">
+                                    <hr>
+                                    <strong><p class="MovieTitle" id="title43" style="text-align: center"></p></strong>
+                                </div>
+                                <div class="row">
+                                    <a herf="#">
+                                        <h5 align="right" class="search_romance">>>更多結果</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="genre_SF" class="tab-pane fade">
+                            <div class="row">
+                                <br>
+                                <div class="col-lg-4">
+                                    <br>
+                                    <span class="label label-warning" id="votescore51"></span>
+                                    <br>
+                                    <img src="img/ImgResponsive_Placeholder.png" class="cover" id="cover51" style="margin: auto" width="210" height="315">
+                                    <hr>
+                                    <strong><p class="MovieTitle" id="title51" style="text-align: center"></p></strong>
+                                </div>
+                                <div class="col-lg-4">
+                                    <br>
+                                    <span class="label label-warning" id="votescore52"></span>
+                                    <br>
+                                    <img src="img/ImgResponsive_Placeholder.png" class="cover" id="cover52" style="margin: auto" width="210" height="315">
+                                    <hr>
+                                    <strong><p class="MovieTitle" id="title52" style="text-align: center"></p></strong>
+                                </div>
+                                <div class="col-lg-4">
+                                    <br>
+                                    <span class="label label-warning" id="votescore53"></span>
+                                    <br>
+                                    <img src="img/ImgResponsive_Placeholder.png" class="cover" id="cover53" style="margin: auto" width="210" height="315">
+                                    <hr>
+                                    <strong><p class="MovieTitle" id="title53" style="text-align: center"></p></strong>
+                                </div>
+                                <div class="row">
+                                    <a herf="#">
+                                        <h5 align="right" class="search_sf">>>更多結果</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <p align="left"><strong style="color:#275A83">今日推薦電影</strong></p>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <img src="img/ImgResponsive_Placeholder.png" class="cover" id="recom_cover_1" width="180" height="270">
+                        </div>
+                        <br>
+                        <div class="col-lg-6 col-lg-offset-1">
+                            <strong><p class="movieTitle_cmd" id="recom_title_1" style="font-size: 18px"></p></strong>
+                            <hr>
+                            <h4 align="left"><span class="label label-warning" id="votescore">綜合評價</span>
+                                <h4>
+                                    <strong><h5 class="votescore_cmd" id="recom_score_1" style="color:#F0AD4E"></h5></strong>
+                                </h4>
+                            </h4>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <img src="img/ImgResponsive_Placeholder.png" class="cover" id="recom_cover_2" width="180" height="270">
+                        </div>
+                        <br>
+                        <div class="col-lg-6 col-lg-offset-1">
+                            <strong><p class="movieTitle_cmd" id="recom_title_2" style="font-size: 18px"></p></strong>
+                            <hr>
+                            <h4 align="left"><span class="label label-warning">綜合評價</span></h4>
+                            <strong><h5 class="votescore_cmd" id="recom_score_2" style="color:#F0AD4E"></h5></strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <footer>
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-4 text-left col-lg-offset-1">
+                    <br>
+                    <a href="homepage.html"><img src="img/logo.png" width="74" height="74"></a>
+                    <p>NTUST-1082系統分析與設計</p>
+                    <p>你的貓貓正在餓餓 電影推薦系統</p>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-md-3 text-left">
+                </div>
+                <div class="col-md-4 text-left">
+                    <br>
+                    <h4 id="contect">聯絡資訊</h4>
+                    <p>國立臺灣科技大學 資訊管理系
+                        <a href="https://www.cs.ntust.edu.tw/index.php/zh/ "><img src="img/fansPage.png " width="24 " height="24 "></a><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="homepage.js"></script>
+
+
+</body>
+
+</html>

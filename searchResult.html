@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans&display=swap" rel="stylesheet">
+    <title>MovieCat-searching</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span
+                        class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <br>
+            <div class="collapse navbar-collapse" id="defaultNavbar1">
+
+                <div class="col-md-1"></div>
+                <span class="nav navbar-nav"><a href="homepage.html"><img src="img/logo.png" alt="Placeholder image"
+                            width="80" height="80" class="img-responsive"></a></span>
+                <div class="col-md-1 text-left"></div>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="search_word" placeholder="Search" size="80">
+                        <select id="dropdown-menu">
+                            <option value="Title" selected>電影名稱</option>
+                            <option value="Actor">演員</option>
+                            <option value="Genre">電影類型</option>
+						
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-default" id="btn">Submit</button>
+                    <br>
+                    <div class="form-group" id="key">
+                        <label id="key1" style="margin-left: 5px;"></label>
+                        <label id="key2" style="margin-left: 10px;"></label>
+                        <label id="key3" style="margin-left: 10px;"></label>
+                        <label id="key4" style="margin-left: 10px;"></label>
+                        <label id="key5" style="margin-left: 10px;"></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br>
+
+    <div class="container">
+        <div class="row col-lg-offset-1">
+            <div class="row col-lg-11">
+                <div class="dropdown navbar-right">
+                    <select id="sortby">
+                        <option value="Score_Des" selected>評分[降序]</option>
+						<option value="Score_Asc">評分[升序]</option>
+						<option value="Time_Des">時間[降序]</option>
+						<option value="Time_Asc">時間[升序]</option>
+						<option value="Nation_Des">產出地[降序]</option>
+                        <option value="Nation_Asc">產出地[升序]</option>
+                        
+						
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container ctnrResult" id="mcontainer">
+
+    </div>
+
+    <hr>
+    <hr>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-left col-lg-offset-1">
+                    <br>
+                    <a href="homepage.html"><img src="img/logo.png" width="74" height="74" alt="logo"></a>
+                    <p>NTUST-1082系統分析與設計</p>
+                    <p>你的貓貓正在餓餓 電影推薦系統</p>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-md-3 text-left">
+                </div>
+                <div class="col-md-4 text-left">
+                    <br>
+                    <h4>聯絡資訊</h4>
+                    <p>國立臺灣科技大學 資訊管理系
+                        <a href="https://www.cs.ntust.edu.tw/index.php/zh/ "><img src="img/fansPage.png " width="24 " height="24 " alt="fansPage"></a><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/jquery-1.11.3.min.js "></script>
+    <script src="js/bootstrap.js "></script>
+    <script src="search.js"></script>
+</body>
+
+</html>
