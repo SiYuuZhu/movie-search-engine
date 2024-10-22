@@ -35,7 +35,7 @@ function movieResult(poster, name, date, overview, vote, director, cast, trailer
 }
 
 // for TMDb
-var apiKeyT = "5b1d1862f3117ce9288a7827c833aaa8";
+var apiKeyT = "";
 var movieurl = "https://api.themoviedb.org/3/movie/";
 var movieurl2 = "?api_key=" + apiKeyT;
 var casturl = "/credits?api_key=" + apiKeyT;
